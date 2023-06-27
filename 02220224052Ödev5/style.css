@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(image/back-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .traffic-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .traffic-light img {
+    border-radius: 5px;
+}
+
+.container .traffic-light .buttons button{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    margin: 20px 0 30px 30px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.container .traffic-light .buttons .red {
+    background: red;
+    color: black;
+    border: 5px solid #000;
+    border-radius: 50px;
+    transition: 0.5s
+}
+
+.container .traffic-light .buttons .red:focus {
+    background: white;
+    color: red;
+    border: 5px solid blue;
+}
+
+.container .traffic-light .buttons .yellow {
+    background: yellow;
+    color: black;
+    border: 5px solid #000;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.container .traffic-light .buttons .yellow:focus {
+    background: white;
+    color: yellow;
+    border: 5px solid blue;
+}
+
+.container .traffic-light .buttons .green {
+    background: green;
+    color: black;
+    border: 5px solid #000;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.container .traffic-light .buttons .green:focus {
+    background: white;
+    color: green;
+    border: 5px solid blue;
+}
+
+.container .traffic-light .buttons .off {
+    background: white;
+    color: black;
+    border: 5px solid #000;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.container .traffic-light .buttons .off:focus {
+    background: black;
+    color: white;
+    border: 5px solid blue;
+}
